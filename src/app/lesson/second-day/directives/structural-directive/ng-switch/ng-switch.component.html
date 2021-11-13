@@ -1,0 +1,15 @@
+<p>ng-switch works!</p>
+<p style="font-size: 26px; color: blue;">[ngSwitch]</p>
+<div [ngSwitch]="conditionSwitch">
+  <div *ngSwitchCase="'red'" style="color: red;">Red</div>
+  <div *ngSwitchCase="'blue'" style="color: blue;">Blue</div>
+  <div *ngSwitchCase="'white'" style="color: white;">White</div>
+  <div *ngSwitchDefault style="color: orange;">Orange</div>
+</div>
+<!-- <select #t (change)="changeColor(t.value)"> #name Cách 1 -->
+<select #t (change)="changeColor($event)">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="white">White</option>
+</select>

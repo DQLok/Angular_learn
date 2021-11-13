@@ -1,0 +1,6 @@
+<p>ng-for works!</p>
+<ng-container *ngFor="let item of studentList, let num=index">
+  <div *ngIf="item.age === 20">
+    {{num+1}} Name: {{item.name}} - Age: {{item.age}}
+  </div>
+</ng-container>
